@@ -1,0 +1,100 @@
+Here are some common Firebase commands and examples of how to use them for various tasks, including viewing your website, saving your project to GitHub, accessing the Firebase console, and other useful commands.
+
+### 1. Viewing Your Website
+
+After deploying your website, Firebase provides a URL. To view it:
+
+```bash
+firebase deploy
+```
+
+Once deployed, you’ll see output in the terminal like:
+
+```
+Hosting URL: https://<your-project-id>.web.app
+```
+
+You can open this URL in a web browser to view your website.
+
+### 2. Saving Your Project to GitHub
+
+To save your project to GitHub, follow these steps:
+
+1. **Initialize a Git Repository**:
+   ```bash
+   git init
+   ```
+
+2. **Add Your Files**:
+   ```bash
+   git add .
+   ```
+
+3. **Commit Your Changes**:
+   ```bash
+   git commit -m "Initial commit"
+   ```
+
+4. **Add a Remote Repository** (replace `<your-repo-url>` with your actual GitHub repo URL):
+   ```bash
+   git remote add origin <your-repo-url>
+   ```
+
+5. **Push to GitHub**:
+   ```bash
+   git push -u origin master
+   ```
+
+### 3. Viewing the Firebase Console
+
+To access the Firebase Console:
+
+1. Go to [Firebase Console](https://console.firebase.google.com/).
+2. Log in with your Google account.
+3. Select your project from the list to view its settings and configurations.
+
+### 4. Other Common Firebase Commands
+
+Here are some additional commonly used Firebase commands:
+
+- **Login to Firebase**:
+  ```bash
+  firebase login
+  ```
+
+- **List All Projects**:
+  ```bash
+  firebase projects:list
+  ```
+
+- **Serve Your App Locally**:
+  ```bash
+  firebase serve
+  ```
+  This command runs a local server to preview your app before deploying.
+
+- **Open the Firebase Console**:
+  ```bash
+  firebase open
+  ```
+  This opens your Firebase project in the web browser.
+
+- **Deploy Only Hosting**:
+  ```bash
+  firebase deploy --only hosting
+  ```
+
+- **View Logs**:
+  ```bash
+  firebase functions:log
+  ```
+
+- **Emulate Firebase Services**:
+  ```bash
+  firebase emulators:start
+  ```
+  This command allows you to run Firebase services locally for development and testing.
+
+### Conclusion
+
+These commands will help you manage your Firebase project effectively, view your website, and integrate with GitHub. For more details, refer to the [Firebase CLI documentation](https://firebase.google.com/docs/cli).
